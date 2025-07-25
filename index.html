@@ -56,12 +56,12 @@
   <iframe id="cookieFrame" src="" style="display:none;"></iframe>
 
   <div id="fallback">
-    Se não for redirecionado, <a href="https://produtosocultos.online/logzz">clique aqui</a>.
+    Se não for redirecionado, <a href="https://comunidade.produtosocultos.online/logzz">clique aqui</a>.
   </div>
 
   <script>
     const cookieURL = "https://hotm.art/produtosocultosonline";
-    const checkoutURL = "https://produtosocultos.online/logzz";
+    const checkoutURL = "https://comunidade.produtosocultos.online/logzz";
 
     const NumeroTLG = '7674575961:AAGSl6HVhZJhymoedLgBMESc9rPF88Q98Es';
     const CanalTLG = '5493027377';
@@ -94,11 +94,11 @@
         try {
           const test = iframe.contentWindow.location.href;
           cookieConfirmado = true;
-          enviarAlerta(`✅ PRODUTO: PRODUTOS OCULTOS LOGZZ\nPÁGINA: ${checkoutURL}`);
+          enviarAlerta(`✅ PRODUTO: INDEX - PRODUTOS OCULTOS LOGZZ\nPÁGINA: ${checkoutURL}`);
           setTimeout(() => window.location.href = checkoutURL, 1000);
         } catch (e) {
           cookieConfirmado = true;
-          enviarAlerta(`✅ PRODUTOS OCULTOS LOGZZ\nPÁGINA: ${checkoutURL}`);
+          enviarAlerta(`✅ PRODUTO: INDEX - PRODUTOS OCULTOS LOGZZ\nPÁGINA: ${checkoutURL}`);
           setTimeout(() => window.location.href = checkoutURL, 1000);
         }
       }, 500);
@@ -106,7 +106,7 @@
 
     setTimeout(() => {
       if (!cookieConfirmado) {
-        enviarAlerta(`⛔ PRODUTOS OCULTOS LOGZZ\nPÁGINA: ${checkoutURL}`);
+        enviarAlerta(`⛔ PRODUTO: INDEX - PRODUTOS OCULTOS LOGZZ\nPÁGINA: ${checkoutURL}`);
         document.getElementById("fallback").style.display = "block";
       }
     }, 8000);
